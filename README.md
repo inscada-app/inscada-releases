@@ -41,7 +41,10 @@ If the new release does not come up, nothing is rolled back by itself. The rollb
 previous jar and the database backup taken before the update - is shown on the card and written to
 `update\state\result.properties`. Run it in an administrator command prompt.
 
-**A cluster is not updated by the button.** Update its nodes by hand, in the order the cluster documentation gives.
+**A two-node cluster is updated by the button from release 20261109-20 on.** Update each node from its own card, the standby
+first, then the leader; open the standby's card on the standby's own address, not through the proxy. Pressing in the wrong
+order or too early is refused, and the card says why. An installation on an earlier release is updated by hand, in the
+order the cluster documentation gives.
 
 ## Moving an existing installation to the update button (once)
 
