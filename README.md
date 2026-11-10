@@ -26,7 +26,8 @@ set up before the launcher existed can be moved to it once - see [the next secti
 1. Open **Settings → Server → Update**.
 2. Get the release onto the server, either way:
    - press **Download &lt;version&gt;** when the card offers a newer official release (give a reason; downloading
-     installs nothing), or
+     installs nothing). The card looks for a newer release once a day; from 20261110-7 on, **Check now** on the
+     card asks at once, and on an earlier release restarting the inSCADA service makes it look a minute later. Or
    - on a server without internet access, copy `app-<rev>.jar` **and** `app-<rev>.jar.sig` from the release page
      into the `update\pending` folder of the installation (`C:\Program Files\inSCADA\update\pending`).
 3. Check the card: the launcher's verdict on the release must be accepted, and every precondition must hold
